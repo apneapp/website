@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Name - Coming Soon</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(135deg, #89f7fe 10%, #66a6ff 100%), url('background-image.jpg'); /* Gradient overlay on the background image */
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #container {
+            display: flex;
+            align-items: center;
+        }
+
+        #text {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #text h1 {
+            font-size: 36px;
+            color: #fff; /* Text color for "Coming Soon" */
+            font-family: 'Arial', sans-serif; /* Font for "Coming Soon" */
+            margin-bottom: 20px;
+        }
+
+        #text p {
+            font-size: 18px;
+            color: #fff; /* Text color for the app availability message */
+            font-family: 'Arial', sans-serif; /* Font for the app availability message */
+        }
+
+        #mobile-view {
+            flex: 1;
+        }
+
+        #app-preview {
+            width: 80%;
+            max-width: 400px;
+            margin: 0 auto;
+            display: block;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 5px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="text">
+            <h1>Coming Soon</h1>
+            <p>Our app will be available on Google Play soon!</p>
+        </div>
+        <div id="mobile-view">
+            <img id="app-preview" src="src/apneapp-mobile-screen.png" alt="App Preview">
+        </div>
+    </div>
+</body>
+</html>
