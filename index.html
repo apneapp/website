@@ -10,12 +10,7 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #fff;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
+            background: linear-gradient(to right, #8fdaf9, #d5baf2);
         }
 
         #app-preview {
@@ -25,14 +20,6 @@
             display: block;
             border-radius: 15px;
             overflow: hidden;
-            border: 5px solid #000;
-        }
-
-        #heading {
-            font-size: 36px;
-            text-align: center;
-            color: #000;
-            margin-bottom: 20px;
         }
 
         #welcome {
@@ -43,18 +30,19 @@
         #col1 {
             flex: 1;
             padding: 20px;
-            background-color: #f3f3f3cc;
             border-radius: 15px;
             margin: 20px;
         }
 
         #col1-heading {
-            font-size: 36px;
+            font-size: 42px;
             margin-bottom: 20px;
+            line-height: 1.2;
         }
 
         #col1-heading-para {
-            font-size: 18px;
+            font-size: 22px;
+            line-height: 1.8;
         }
 
         #col2 {
@@ -63,60 +51,78 @@
 
         #product {
             display: flex;
-            align-items: center;
+            flex-direction: row;
+            margin-left: 1px;
+            margin-right: 1px;
+            background-color: #f3f3f3cc;
+
         }
 
         #product-col1 {
             flex: 1;
-            height: 400px;
-            margin: 20px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 15px;
-            overflow: hidden;
-        }
+            background: linear-gradient(to right, #556d59, #b7d2bc);
 
-        #product-col1-heading {
-            font-size: 36px;
-            margin: 0 0 20px 20px;
-        }
-
-        #anyimg {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
         }
 
         #product-col2 {
             flex: 1;
+            background: linear-gradient(to left, #556d59, #b7d2bc);
+
+        }
+
+        #product-col1-heading {
+            margin-top: 60px;
+            margin-left: 180px;
+            font-size: 40px;
+
+        }
+
+        .logo {
+            margin: 40px;
+        }
+
+        .logo img {
+            width: 500px;
             height: 400px;
-            margin: 20px;
-            padding: 20px;
-            font-size: 20px;
-            background-color: #fff;
-            border-radius: 15px;
+            margin: 0 50px;
         }
 
         #product-col2-heading {
-            font-size: 20px;
-            margin-bottom: 20px;
+            margin-top: 60px;
+            margin-bottom: 40px;
+            margin-left: 100px;
+            font-size: 24px;
+
         }
 
         #col2-heading-para {
-            font-size: 18px;
-            padding: 30px;
+            padding: 0 100px;
+            font-size: 22px;
+            line-height: 1.8;
+
         }
 
         #team {
             align-items: center;
-            margin-left: 180px;
-            margin-right: 180px;
+            margin: 0 180px;
 
         }
 
         #team-intro {
             padding: 20px;
             text-align: center;
+        }
+
+        #heading {
+            font-size: 40px;
+            text-align: center;
+            color: #000;
+            margin-bottom: 20px;
+        }
+
+        #intro-para {
+            font-size: 20px;
+            line-height: 1.8;
         }
 
         #team-members {
@@ -138,39 +144,86 @@
         }
 
         .member-detail {
-            padding: 20px;
-            background-color: #f3f3f3cc;
+            padding: 30px;
+            background: linear-gradient(to right, #5ecb58, #35d0d1);
+        }
+
+        .social img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .member-detail-bio {
+            line-height: 1.5;
+            margin-top: 30px;
         }
 
         #legal {
             flex: 1;
-            padding: 20px;
-            margin: 0 20px;
+            padding: 100px;
+            margin-top: 60px;
+            background: linear-gradient(to right, #27859f, #12b142);
         }
 
         #legal-para {
             padding: 0 150px;
-
+            margin-top: 40px;
+            line-height: 1.8;
+            font-size: 18px;
         }
 
         #contact {
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding: 40px 80px 0;
         }
 
         .contact-info {
             display: flex;
             justify-content: space-between;
+            margin-top: 10px;
         }
 
         .address,
         .email {
             flex: 1;
-            background-color: #f3f3f3cc;
+            background-color: #66CDAA;
             border-radius: 15px;
             margin: 0 10px;
+            padding: 30px;
             text-align: center;
+            line-height: 1.5;
+        }
+
+        .address-logo {
+            width: 100px;
+            height: 100px;
+        }
+
+        .contact-phone {
+            width: 80px;
+            height: 80px;
+        }
+
+        .contact-email {
+            width: 80px;
+            height: 80px;
+        }
+
+        .contact-para {
+            font-size: 20px;
+            line-height: 1.8;
+            margin-top: 40px;
+        }
+
+        span {
+            color: green;
+        }
+
+        footer {
+            text-align: center;
+
         }
     </style>
 </head>
@@ -180,7 +233,7 @@
     <section id="welcome">
         <article id="col1">
             <h1 id="col1-heading">
-                Welcome to FarmPut Technologies and Services Pvt Ltd!
+                Welcome to <br><span> FarmPut Technologies <br>and<br> Services Pvt Ltd!</span>
             </h1>
             <p id="col1-heading-para">FarmPut Technologies and Services Pvt Ltd is the premier tech platform
                 revolutionizing the way
@@ -194,27 +247,34 @@
     </section>
     <!-- section for product -->
     <section id="product">
-        <article id="product-col1">
+        <div id="product-col1">
             <h1 id="product-col1-heading">
                 FarmPut Product
             </h1>
-            <img id="anyimg" src="src/product.png" alt="App Preview">
-        </article>
-        <aside id="product-col2">
+            <hr style="border-color:#5ecb58;width: 550px;">
+
+            <div class="logo">
+                <img src="src/product.png" alt="App Preview">
+            </div>
+        </div>
+        <div id="product-col2">
             <h1 id="product-col2-heading">Product Offerings</h1>
-            <p id="col2-heading-para">Introducing our flagship product: FarmPut Bot. FarmPut Bot empowers users to
-                capture demand or supply details through a series of targeted questions. Leveraging cutting-edge
+            <p id="col2-heading-para">Introducing our flagship product: FarmPut Bot. <br>FarmPut Bot empowers users to
+                capture demand or supply details through a series of targeted questions. <br>
+                Leveraging cutting-edge
                 technology and a robust database, FarmPut Bot matches the perfect buyer with the right seller, ensuring
                 efficient and profitable transactions for all parties involved.
 
             </p>
-        </aside>
+        </div>
     </section>
     <!-- section for team -->
     <section id="team">
         <div id="team-intro">
             <h1 id="heading">Meet the Team</h1>
-            <p>Meet the visionaries behind FarmPut Technologies and Services Pvt Ltd:</p>
+            <hr style="border-color:#5ecb58;width: 600px;">
+
+            <p id="intro-para">Meet the visionaries behind FarmPut Technologies and Services Pvt Ltd:</p>
         </div>
         <div id="team-members">
             <!-- Team member 1 -->
@@ -223,7 +283,7 @@
                 <div class="member-detail">
                     <p>Co-Founder</p>
                     <p>Mayank Gandhi</p>
-                    <p>
+                    <p class="member-detail-bio">
                         With a wealth of experience in Agritech, Mayank has held leadership roles in prominent Agritech
                         organizations prior to co-founding FarmPut Technologies and Services Pvt Ltd. His expertise
                         drives
@@ -231,6 +291,11 @@
                         the
                         agricultural industry.
                     </p>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/mayank-gandhi-1b1b1b1b1/">
+                            <img src="src/linkedin-svg.svg" alt="LinkedIn">
+                        </a>
+                    </div>
                 </div>
             </div>
             <!-- Team member 2 -->
@@ -239,7 +304,8 @@
                 <div class="member-detail">
                     <p>Co-Founder</p>
                     <p>Tarun Kundhiya</p>
-                    <p>
+                    <p class="member-detail-bio">
+
                         Tarun brings extensive Agritech experience to the table, having served in leadership positions
                         in
                         leading Agritech firms before co-founding FarmPut Technologies and Services Pvt Ltd. His deep
@@ -247,7 +313,13 @@
                         growth
                         and success.
                     </p>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/mayank-gandhi-1b1b1b1b1/">
+                            <img src="src/linkedin-svg.svg" alt="LinkedIn">
+                        </a>
+                    </div>
                 </div>
+
             </div>
 
     </section>
@@ -255,35 +327,52 @@
     <section id="legal">
         <div id="text">
             <h1 id="heading">Legal Disclaimer</h1>
+            <hr style="border-color:#5ecb58;width: 600px;">
+
             <p id="legal-para">All content on this website, including text, images, graphics, and logos, is the property
                 of FarmPut
                 Technologies and Services Pvt Ltd unless otherwise stated. Unauthorized use or reproduction of any
                 content is strictly prohibited. For inquiries regarding legal matters, please contact us at
-                apneapplication@gmail.com</p>
+                <u>
+                    apneapplication@gmail.com
+                </u>
+
+            </p>
         </div>
 
     </section>
     <!-- section for contact -->
     <section id="contact">
         <h1 id="heading">Contact Us</h1>
+        <hr style="border-color:#5ecb58;width: 600px;">
+        <p class="contact-para">
+            <span>Farmstock Technologies</span><br> A one step solution for all your agricultural needs with the aim of
+            digializing agriculture in India.
+        </p>
         <div class="contact-info">
             <div class="address">
                 <h1>Address</h1>
+                <img class="address-logo" src="src/Buildings.svg" alt="Location">
                 <p>Basement, Landmark Tower, Plot No.2, Southcity-1, Opposite C-113, Ashok Marg, Sector 41, Gurgaon -
                     122001
                 </p>
             </div>
             <div class="email">
                 <h1>Contact</h1>
+                <img class="contact-phone" src="src/phone.svg" alt="Location">
                 <p>
                     9535990524
                 </p>
+                <img class="contact-email" src="src/email.svg" alt="Location">
                 <p>
                     Contact@Farmstock.In
                 </p>
             </div>
         </div>
     </section>
+    <footer>
+        <img src="src/Footer.png" alt="Footer">
+    </footer>
 
 </body>
 
