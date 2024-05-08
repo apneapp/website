@@ -5,230 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App Name - Coming Soon</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #8fdaf9, #d5baf2);
-        }
-
-        #app-preview {
-            width: 80%;
-            max-width: 400px;
-            margin: 0 auto;
-            display: block;
-            border-radius: 15px;
-            overflow: hidden;
-        }
-
-        #welcome {
-            display: flex;
-            align-items: center;
-        }
-
-        #col1 {
-            flex: 1;
-            padding: 20px;
-            border-radius: 15px;
-            margin: 20px;
-        }
-
-        #col1-heading {
-            font-size: 42px;
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
-
-        #col1-heading-para {
-            font-size: 22px;
-            line-height: 1.8;
-        }
-
-        #col2 {
-            flex: 1;
-        }
-
-        #product {
-            display: flex;
-            flex-direction: row;
-            margin-left: 1px;
-            margin-right: 1px;
-            background-color: #f3f3f3cc;
-
-        }
-
-        #product-col1 {
-            flex: 1;
-            background: linear-gradient(to right, #556d59, #b7d2bc);
-
-        }
-
-        #product-col2 {
-            flex: 1;
-            background: linear-gradient(to left, #556d59, #b7d2bc);
-
-        }
-
-        #product-col1-heading {
-            margin-top: 60px;
-            margin-left: 180px;
-            font-size: 40px;
-
-        }
-
-        .logo {
-            margin: 40px;
-        }
-
-        .logo img {
-            width: 500px;
-            height: 400px;
-            margin: 0 50px;
-        }
-
-        #product-col2-heading {
-            margin-top: 60px;
-            margin-bottom: 40px;
-            margin-left: 100px;
-            font-size: 24px;
-
-        }
-
-        #col2-heading-para {
-            padding: 0 100px;
-            font-size: 22px;
-            line-height: 1.8;
-
-        }
-
-        #team {
-            align-items: center;
-            margin: 0 180px;
-
-        }
-
-        #team-intro {
-            padding: 20px;
-            text-align: center;
-        }
-
-        #heading {
-            font-size: 40px;
-            text-align: center;
-            color: #000;
-            margin-bottom: 20px;
-        }
-
-        #intro-para {
-            font-size: 20px;
-            line-height: 1.8;
-        }
-
-        #team-members {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .team-member {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0 30px;
-        }
-
-        .member-img {
-            width: 100%;
-            background-color: #f3f3f3cc;
-        }
-
-        .member-detail {
-            padding: 30px;
-            background: linear-gradient(to right, #5ecb58, #35d0d1);
-        }
-
-        .social img {
-            width: 30px;
-            height: 30px;
-        }
-
-        .member-detail-bio {
-            line-height: 1.5;
-            margin-top: 30px;
-        }
-
-        #legal {
-            flex: 1;
-            padding: 100px;
-            margin-top: 60px;
-            background: linear-gradient(to right, #27859f, #12b142);
-        }
-
-        #legal-para {
-            padding: 0 150px;
-            margin-top: 40px;
-            line-height: 1.8;
-            font-size: 18px;
-        }
-
-        #contact {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 40px 80px 0;
-        }
-
-        .contact-info {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 10px;
-        }
-
-        .address,
-        .email {
-            flex: 1;
-            background-color: #66CDAA;
-            border-radius: 15px;
-            margin: 0 10px;
-            padding: 30px;
-            text-align: center;
-            line-height: 1.5;
-        }
-
-        .address-logo {
-            width: 100px;
-            height: 100px;
-        }
-
-        .contact-phone {
-            width: 80px;
-            height: 80px;
-        }
-
-        .contact-email {
-            width: 80px;
-            height: 80px;
-        }
-
-        .contact-para {
-            font-size: 20px;
-            line-height: 1.8;
-            margin-top: 40px;
-        }
-
-        span {
-            color: green;
-        }
-
-        footer {
-            text-align: center;
-
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <!-- Header  -->
+    <ul class="topnav">
+        <li class="menu-icon"><a href="javascript:void(0);" onclick="toggleMenu()">&#9776;</a></li>
+        <li><a class="active" href="#welcome">Welcome</a></li>
+        <li><a href="#product">Product</a></li>
+        <li><a href="#team">Team</a></li>
+        <li class="right"><a href="#contact">Contact</a></li>
+        <li><a href="#legal">Legal</a></li>
+    </ul>
+
+
     <!-- section for introduction -->
     <section id="welcome">
         <article id="col1">
@@ -251,7 +43,7 @@
             <h1 id="product-col1-heading">
                 FarmPut Product
             </h1>
-            <hr style="border-color:#5ecb58;width: 550px;">
+            <hr>
 
             <div class="logo">
                 <img src="src/product.png" alt="App Preview">
@@ -272,14 +64,14 @@
     <section id="team">
         <div id="team-intro">
             <h1 id="heading">Meet the Team</h1>
-            <hr style="border-color:#5ecb58;width: 600px;">
+            <hr>
 
             <p id="intro-para">Meet the visionaries behind FarmPut Technologies and Services Pvt Ltd:</p>
         </div>
         <div id="team-members">
             <!-- Team member 1 -->
             <div class="team-member">
-                <img class="member-img"" src=" src/Smiling Businessman.webp" alt="Team Member 1">
+                <img class="member-img" src=" src/Smiling Businessman.webp" alt="Team Member 1">
                 <div class="member-detail">
                     <p>Co-Founder</p>
                     <p>Mayank Gandhi</p>
@@ -300,7 +92,7 @@
             </div>
             <!-- Team member 2 -->
             <div class="team-member">
-                <img class="member-img"" src=" src/Office employee.webp" alt="Team Member 2">
+                <img class="member-img" src=" src/Office employee.webp" alt="Team Member 2">
                 <div class="member-detail">
                     <p>Co-Founder</p>
                     <p>Tarun Kundhiya</p>
@@ -323,12 +115,42 @@
             </div>
 
     </section>
+
+    <!-- section for contact -->
+    <section id="contact">
+        <h1 id="heading">Contact Us</h1>
+        <hr>
+        <p class="contact-para">
+            <span>FarmPut Technologies and Services Pvt Ltd!</span><br> A one step solution for all your agricultural
+            needs with the aim of
+            digializing agriculture in India.
+        </p>
+        <div class="contact-info">
+            <div class="address">
+                <h1>Address</h1>
+                <img class="address-logo" src="src/Buildings.svg" alt="Location">
+                <p>
+                    Innov8 CP2 44, BackaryPortion, 2nd Floor, Regal Building, NewDelhi, 110001
+                </p>
+            </div>
+            <div class="email">
+                <h1>Contact</h1>
+                <img class="contact-phone" src="src/phone.svg" alt="Location">
+                <p>
+                    +91 9920686581
+                </p>
+                <img class="contact-email" src="src/email.svg" alt="Location">
+                <p>
+                    apneapplication@gmail.com
+                </p>
+            </div>
+        </div>
+    </section>
     <!-- section for legal disclaimer -->
     <section id="legal">
         <div id="text">
             <h1 id="heading">Legal Disclaimer</h1>
-            <hr style="border-color:#5ecb58;width: 600px;">
-
+            <hr>
             <p id="legal-para">All content on this website, including text, images, graphics, and logos, is the property
                 of FarmPut
                 Technologies and Services Pvt Ltd unless otherwise stated. Unauthorized use or reproduction of any
@@ -341,39 +163,36 @@
         </div>
 
     </section>
-    <!-- section for contact -->
-    <section id="contact">
-        <h1 id="heading">Contact Us</h1>
-        <hr style="border-color:#5ecb58;width: 600px;">
-        <p class="contact-para">
-            <span>Farmstock Technologies</span><br> A one step solution for all your agricultural needs with the aim of
-            digializing agriculture in India.
-        </p>
-        <div class="contact-info">
-            <div class="address">
-                <h1>Address</h1>
-                <img class="address-logo" src="src/Buildings.svg" alt="Location">
-                <p>Basement, Landmark Tower, Plot No.2, Southcity-1, Opposite C-113, Ashok Marg, Sector 41, Gurgaon -
-                    122001
-                </p>
-            </div>
-            <div class="email">
-                <h1>Contact</h1>
-                <img class="contact-phone" src="src/phone.svg" alt="Location">
-                <p>
-                    9535990524
-                </p>
-                <img class="contact-email" src="src/email.svg" alt="Location">
-                <p>
-                    Contact@Farmstock.In
-                </p>
-            </div>
-        </div>
-    </section>
     <footer>
         <img src="src/Footer.png" alt="Footer">
     </footer>
-
+    <script>
+        function toggleMenu() {
+            var x = document.getElementsByClassName("topnav")[0];
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+        window.addEventListener('scroll', function () {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+                    current = section.getAttribute('id');
+                }
+            })
+            document.querySelectorAll('.topnav a').forEach(a => {
+                a.classList.remove('active');
+                if (a.getAttribute('href').slice(1) === current) {
+                    a.classList.add('active');
+                }
+            })
+        });
+    </script>
 </body>
 
 </html>
