@@ -187,10 +187,11 @@ span {
     margin: 0 80px;
 }
 
-.member-img {
+/* Adjust team photos here */
+/* .member-img {
     width: 100%;
     background-color: #f3f3f3cc;
-}
+} */
 
 .team-member hr{
     border-color: #09366d;
