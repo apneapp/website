@@ -4,22 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Name - Coming Soon</title>
+    <title>FarmPut Technologies</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!-- Header  -->
+    <nav>
     <ul class="topnav">
         <li class="menu-icon"><a href="javascript:void(0);" onclick="toggleMenu()">&#9776;</a></li>
         <li><a class="active" href="#welcome">Welcome</a></li>
         <li><a href="#product">Product</a></li>
         <li><a href="#team">Team</a></li>
-        <li class="right"><a href="#contact">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
         <li><a href="#legal">Legal</a></li>
     </ul>
-
+</nav>
 
     <!-- section for introduction -->
     <section id="welcome">
@@ -51,7 +52,7 @@
         </div>
         <div id="product-col2">
             <h1 id="product-col2-heading">Product Offerings</h1>
-            <p id="col2-heading-para">Introducing our flagship product: FarmPut Bot. <br>FarmPut Bot empowers users to
+            <p id="col2-heading-para">Introducing our flagship product: <u>FarmPut Bot Link</u> . <br>FarmPut Bot empowers users to
                 capture demand or supply details through a series of targeted questions. <br>
                 Leveraging cutting-edge
                 technology and a robust database, FarmPut Bot matches the perfect buyer with the right seller, ensuring
@@ -73,7 +74,7 @@
             <div class="team-member">
                 <img class="member-img" src=" src/Smiling Businessman.webp" alt="Team Member 1">
                 <div class="member-detail">
-                    <p>Co-Founder</p>
+                    <p style="color: #09366d;">Co-Founder</p>
                     <p>Mayank Gandhi</p>
                     <p class="member-detail-bio">
                         With a wealth of experience in Agritech, Mayank has held leadership roles in prominent Agritech
@@ -94,7 +95,7 @@
             <div class="team-member">
                 <img class="member-img" src=" src/Office employee.webp" alt="Team Member 2">
                 <div class="member-detail">
-                    <p>Co-Founder</p>
+                    <p style="color: #09366d;">Co-Founder</p>
                     <p>Tarun Kundhiya</p>
                     <p class="member-detail-bio">
 
@@ -164,17 +165,17 @@
 
     </section>
     <footer>
-        <img src="src/Footer.png" alt="Footer">
+        
     </footer>
     <script>
         function toggleMenu() {
-            var x = document.getElementsByClassName("topnav")[0];
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
+    var x = document.getElementsByClassName("topnav")[0];
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
         window.addEventListener('scroll', function () {
             let current = '';
             const sections = document.querySelectorAll('section');
